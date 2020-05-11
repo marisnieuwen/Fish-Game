@@ -21,8 +21,8 @@ function makeEnvironment() {
     
     //position of bubbles
     bubbleProperties = {
-        x: Math.floor(Math.random() * screen.width - 50),
-        y: Math.floor(Math.random() * screen.height - 250),
+        x: Math.floor(Math.random() * screen.width),
+        y: Math.floor(Math.random() * screen.height),
     }
 
     // fish element
