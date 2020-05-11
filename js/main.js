@@ -14,8 +14,8 @@ function makeEnvironment() {
    
     // fish posisitions and colour
     let fishProperties = {
-        x: Math.floor(Math.random() * screen.width - 100),
-        y: Math.floor(Math.random() * screen.height - 250),
+        x: Math.floor(Math.random() * screen.width),
+        y: Math.floor(Math.random() * screen.height),
         colour: Math.floor(Math.random() * 361)
     }
     
