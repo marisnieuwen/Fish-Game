@@ -1,6 +1,6 @@
 window.addEventListener("load", makeEnvironment)
 
-
+let game = document.getElementsByTagName("game")[0]
 // eventlistener for clicking on fish and bubbles
 addEventListener("click", clickFish)
 
@@ -27,14 +27,14 @@ function makeEnvironment() {
 
     // fish element
     let fish = document.createElement("fish")
-    document.body.appendChild(fish)
+    game.appendChild(fish)
     fish.style.transform = `translate(${fishProperties.x}px, ${fishProperties.y}px)`
     fish.style.filter = `hue-rotate(${fishProperties.colour}deg)`
     fish.classList.add("fish")
 
     // bubble element
     let bubble = document.createElement("bubble")
-    document.body.appendChild(bubble)
+    game.appendChild(bubble)
     bubble.style.transform = `translate(${bubbleProperties.x}px,${bubbleProperties.y}px)`
     bubble.classList.add("bubble")
     }
