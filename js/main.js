@@ -14,15 +14,15 @@ function makeEnvironment() {
    
     // fish posisitions and colour
     let fishProperties = {
-        x: Math.floor(Math.random() * screen.width),
-        y: Math.floor(Math.random() * screen.height),
-        colour: Math.floor(Math.random() * 361)
+        x:  Math.random() * (window.innerWidth - fish.clientWidth),
+        y: Math.random() * (window.innerHeight - fish.clientHeight),
+        colour: Math.random() * 360
     }
     
     //position of bubbles
     bubbleProperties = {
-        x: Math.floor(Math.random() * screen.width),
-        y: Math.floor(Math.random() * screen.height),
+        x:  Math.random() * (window.innerWidth - bubble.clientWidth),
+        y: window.innerHeight - bubble.clientHeight,
     }
 
     // fish element
