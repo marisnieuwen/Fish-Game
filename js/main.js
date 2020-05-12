@@ -12,29 +12,32 @@ function makeEnvironment() {
    
     for (let i = 0; i < school; i++) {
    
-    // fish posisitions and colour
-    let fishProperties = {
-        x: Math.floor(Math.random() * screen.width),
-        y: Math.floor(Math.random() * screen.height),
-        colour: Math.floor(Math.random() * 360)
-    }
-    
-    //position of bubbles
-    bubbleProperties = {
-        x: Math.floor(Math.random() * screen.width),
-        y: Math.floor(Math.random() * screen.height),
-    }
-
     // fish element
     let fish = document.createElement("fish")
     game.appendChild(fish)
-    fish.style.transform = `translate(${fishProperties.x}px, ${fishProperties.y}px)`
-    fish.style.filter = `hue-rotate(${fishProperties.colour}deg)`
-    fish.classList.add("fish")
 
     // bubble element
     let bubble = document.createElement("bubble")
     game.appendChild(bubble)
+    
+    // fish posisitions and colour
+    let fishProperties = {
+        x: Math.random() * (window.innerWidth - fish.clientWidth),
+        y: Math.random() * (window.innerHeight - fish.clientHeight),
+        colour: Math.random() * 360
+    }
+    
+    //position of bubbles
+    bubbleProperties = {
+        x: Math.random() * (window.innerWidth - fish.clientWidth),
+        y: Math.random() * (window.innerHeight - fish.clientHeight),
+    }
+
+    fish.style.transform = `translate(${fishProperties.x}px, ${fishProperties.y}px)`
+    fish.style.filter = `hue-rotate(${fishProperties.colour}deg)`
+    fish.classList.add("fish")
+
+
     bubble.style.transform = `translate(${bubbleProperties.x}px,${bubbleProperties.y}px)`
     bubble.classList.add("bubble")
     }
@@ -55,3 +58,4 @@ function clickFish() {
         target.remove()
     }
 }
+
