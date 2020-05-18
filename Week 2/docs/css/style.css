@@ -20,7 +20,7 @@ fish {
     cursor:pointer;
 }
 
-.deadfish {
+.dead {
     background-image: url(../images/bones.png);
 }
 
@@ -28,6 +28,12 @@ bubble {
     background-image: url(../images/bubble.png);
     width:55px; height: 55px;
     cursor:pointer;
+}
+
+trashcan {
+    background-image: url(../images/can.png);
+    width:128px; height: 128px;
+    cursor: pointer;
 }
 
 background {
