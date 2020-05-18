@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     overflow:hidden;
     margin:0px; padding:0px;
+    cursor: url(../images/hook.png), auto;
 }
 
 game * {
@@ -17,7 +18,7 @@ fish {
     background-image: url(../images/fish.png);
     width:130px; height: 110px;
     filter: hue-rotate(90deg);
-    cursor:pointer;
+    cursor: url(../images/hook.png), auto;
 }
 
 .dead {
@@ -27,13 +28,13 @@ fish {
 bubble {
     background-image: url(../images/bubble.png);
     width:55px; height: 55px;
-    cursor:pointer;
+    cursor: url(../images/hook.png), auto;
 }
 
 trashcan {
     background-image: url(../images/can.png);
     width:128px; height: 128px;
-    cursor: pointer;
+    cursor: url(../images/hook.png), auto;
 }
 
 background {
