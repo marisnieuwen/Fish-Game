@@ -1,4 +1,4 @@
-class Trashcan {
+class Can {
 
     div : HTMLElement
 
@@ -6,7 +6,7 @@ class Trashcan {
         let game = document.getElementsByTagName("game")[0]
 
         // create trashcan element and append to game
-        this.div = document.createElement("trashcan")
+        this.div = document.createElement("can")
         game.appendChild(this.div)
 
         //random location

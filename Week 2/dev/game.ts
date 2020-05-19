@@ -2,7 +2,7 @@ class Game {
 
     fish : Fish
     bubble : Bubble
-    trashcan : Trashcan
+    can : Can
 
     constructor() {
         console.log("Game created")
@@ -15,7 +15,7 @@ class Game {
           
         }
         for (let i = 0; i < 20; i++) {
-            this.trashcan = new Trashcan
+            this.can = new Can
             
         }
         
